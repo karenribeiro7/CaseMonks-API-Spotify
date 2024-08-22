@@ -20,9 +20,16 @@ Este projeto é uma aplicação web desenvolvida com Flask e a API do Spotify. O
 - **dotenv**: Para gerenciar variáveis de ambiente.
 
 ## Demonstração
+### Desktop
 
 ![inicio](/static/print1.png)
 
 ![meio](/static/print2.png)
 
 ![fim](/static/print3.png)
+
+### Mobile
+
+![inicio](/static/print4.png)
+
+![fim](/static/print5.png)
