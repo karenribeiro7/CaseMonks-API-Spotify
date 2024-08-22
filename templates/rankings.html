@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Ranking de Artistas</title>
+
+    <link rel="shortcut icon" type="image/svg" href="{{ url_for('static', filename='iconmonstr-spotify-1.svg') }}">
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Spotify - Ranking de Artistas POP</h1>
+    <h1><img class="icone" src="{{ url_for('static', filename='iconmonstr-spotify-1.svg') }}">  Spotify - Ranking de Artistas POP</h1>
     <div class="container">
         {% for artista in tierlist_pop %}
         <div class="card">
