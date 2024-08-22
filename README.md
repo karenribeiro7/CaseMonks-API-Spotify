@@ -18,3 +18,11 @@ Este projeto é uma aplicação web desenvolvida com Flask e a API do Spotify. O
 - **Spotipy**: Biblioteca para acessar a API do Spotify.
 - **HTML/CSS**: Para o front-end e estilização.
 - **dotenv**: Para gerenciar variáveis de ambiente.
+
+## Demonstração
+
+![inicio](/static/print1.png)
+
+![meio](/static/print2.png)
+
+![fim](/static/print3.png)
