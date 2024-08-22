@@ -1,0 +1,7 @@
+.env
+venv/
+/vev/
+__pycache__/
+/__pycache__/
+web-api-examples/
+/web-api-examples/

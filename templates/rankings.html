@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Ranking de Artistas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen">
+</head>
+<body>
+    <h1>Spotify - Ranking de Artistas POP</h1>
+    <div class="container">
+        {% for artista in tierlist_pop %}
+        <div class="card">
+            <img src="{{ artista['image_url'] }}" alt="{{ artista['name'] }}">
+            <h2>{{ loop.index }}. {{ artista['name'] }}</h2>
+            <p>{{ artista.followers | formartar_seguidores }} seguidores</p>
+            <p>{{ artista['popularity'] | int }} de popularidade</p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <h1>Top 5 - Gêneros mais comuns</h1>
+    <div class="container">
+        {% for genre, count in ranking_generos %}
+        <div class="card">
+            <h2>{{ loop.index }}. {{ genre.capitalize() }}</h2>
+            {% if count == 1 %}
+            <p>{{ count }} Artista</p>
+            {% else %}
+            <p>{{ count }} Artistas</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
